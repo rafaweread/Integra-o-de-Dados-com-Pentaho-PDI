@@ -1,0 +1,48 @@
+<Schema name="meuSchema">
+  <Cube name="senado" visible="true" cache="true" enabled="true">
+    <Table name="CUBEFATOGASTOS">
+    </Table>
+    <Dimension type="TimeDimension" visible="true" foreignKey="CODIGOTEMPO" highCardinality="false" name="Tempo">
+      <Hierarchy name="Tempo" visible="true" hasAll="true">
+        <Table name="CUBEDIMTEMPO">
+        </Table>
+        <Level name="Ano" visible="true" column="ANO" type="String" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never" caption="Ano">
+        </Level>
+        <Level name="Mes" visible="true" column="MES" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+        </Level>
+        <Level name="Dia" visible="true" column="DIA" type="String" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="CODIGOSENADOR" highCardinality="false" name="Senador">
+      <Hierarchy name="Senador" visible="true" hasAll="true">
+        <Table name="CUBEDIMSENADOR">
+        </Table>
+        <Level name="Partido" visible="true" column="PARTIDO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Estado" visible="true" column="ESTADO" parentColumn="PARTIDO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Nome" visible="true" column="NOME" parentColumn="ESTADO" type="String" uniqueMembers="true" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="CODIGOFORNECEDOR" name="Fornecedor">
+      <Hierarchy name="Fornecedor" visible="true" hasAll="true">
+        <Table name="CUBEDIMFORNECEDOR" alias="">
+        </Table>
+        <Level name="TipoPJ" visible="true" column="TIPOPJPF" type="String" uniqueMembers="false" levelType="Regular">
+        </Level>
+        <Level name="CNPJ" visible="true" column="CNPJ" type="String" uniqueMembers="true" levelType="Regular">
+        </Level>
+        <Level name="Fornecedor" visible="true" column="NOME" nameColumn="CNPJ" parentColumn="TIPOPJPF" type="String" uniqueMembers="true" levelType="Regular">
+        </Level>
+        <Level name="Despesa" visible="true" column="DESPESA" type="String" uniqueMembers="true" levelType="Regular">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Valor" column="VALOR" datatype="Numeric" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Quantidade" column="QTDE" datatype="Integer" aggregator="count" visible="true">
+    </Measure>
+  </Cube>
+</Schema>

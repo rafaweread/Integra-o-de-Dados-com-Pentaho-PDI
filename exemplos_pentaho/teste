@@ -1,0 +1,290 @@
+SQuirreL SQL Client Session Dump Fri Mar 17 10:54:12 AMT 2017
+
+
+===================================================
+Session Properties
+===================================================
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.client.session.properties.SessionProperties">
+        <AllowCtrlBJumpToObjectTree>true</AllowCtrlBJumpToObjectTree>
+        <AllowCtrlMouseClickJumpToObjectTree>true</AllowCtrlMouseClickJumpToObjectTree>
+        <abortOnError>true</abortOnError>
+        <autoCommit>true</autoCommit>
+        <catalogFilterExclude/>
+        <catalogFilterInclude/>
+        <commitOnClosingConnection>false</commitOnClosingConnection>
+        <contentsLimitRows>true</contentsLimitRows>
+        <contentsNbrOfRowsToShow>100</contentsNbrOfRowsToShow>
+        <fontInfo Class="net.sourceforge.squirrel_sql.fw.gui.FontInfo">
+            <family>Monospaced</family>
+            <isBold>false</isBold>
+            <isItalic>false</isItalic>
+            <size>12</size>
+        </fontInfo>
+        <keepTableLayoutOnRerun>false</keepTableLayoutOnRerun>
+        <limitSqlEntryHistorySize>true</limitSqlEntryHistorySize>
+        <limitSqlResultTabs>true</limitSqlResultTabs>
+        <loadCatalogsSchemas>true</loadCatalogsSchemas>
+        <loadColumnsInBackground>false</loadColumnsInBackground>
+        <mainTabPlacement>1</mainTabPlacement>
+        <metaDataOutputClassName>net.sourceforge.squirrel_sql.fw.datasetviewer.DataSetViewerTablePanel</metaDataOutputClassName>
+        <objectFilterExclude/>
+        <objectFilterInclude/>
+        <objectTabPlacement>1</objectTabPlacement>
+        <removeMultiLineComment>true</removeMultiLineComment>
+        <schemaFilterExclude/>
+        <schemaFilterInclude/>
+        <showResultsMetaData>true</showResultsMetaData>
+        <showRowCount>false</showRowCount>
+        <showSQLErrorsInTab>true</showSQLErrorsInTab>
+        <showToolBar>true</showToolBar>
+        <sqlEntryHistorySize>100</sqlEntryHistorySize>
+        <sqlExecutionTabPlacement>1</sqlExecutionTabPlacement>
+        <sqlFetchSize>false</sqlFetchSize>
+        <sqlLimitRows>true</sqlLimitRows>
+        <sqlNbrOfRowsToShow>100</sqlNbrOfRowsToShow>
+        <sqlPanelOrientation>0</sqlPanelOrientation>
+        <sqlReadOn>false</sqlReadOn>
+        <sqlReadOnBlockSize>100</sqlReadOnBlockSize>
+        <sqlResultTabLimit>15</sqlResultTabLimit>
+        <sqlResultsOutputClassName>net.sourceforge.squirrel_sql.fw.datasetviewer.DataSetViewerTablePanel</sqlResultsOutputClassName>
+        <sqlResultsTabPlacement>1</sqlResultsTabPlacement>
+        <sqlShareHistory>true</sqlShareHistory>
+        <sqlStartOfLineComment>--</sqlStartOfLineComment>
+        <sqlStatementSeparatorString>;</sqlStatementSeparatorString>
+        <sqlUseFetchSize>50</sqlUseFetchSize>
+        <tableContentsOutputClassName>net.sourceforge.squirrel_sql.fw.datasetviewer.DataSetViewerTablePanel</tableContentsOutputClassName>
+        <writeSQLErrorsToLog>false</writeSQLErrorsToLog>
+    </Bean>
+</Beans>
+
+
+===================================================
+Driver
+===================================================
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriver">
+        <driverClassName>org.sqlite.JDBC</driverClassName>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>23056d25:15adc1369d2:-7f3a</string>
+        </identifier>
+        <jarFileName/>
+        <jarFileNames Indexed="true"/>
+        <name>SQLite</name>
+        <url>jdbc:sqlite:&lt;PATH&gt;/mydatabase.db</url>
+        <websiteUrl>https://github.com/xerial/sqlite-jdbc</websiteUrl>
+    </Bean>
+</Beans>
+
+
+===================================================
+Alias
+===================================================
+<Beans>
+    <Bean Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAlias">
+        <autoLogon>false</autoLogon>
+        <colorProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasColorProperties">
+            <objectTreeBackgroundColorRgbValue>0</objectTreeBackgroundColorRgbValue>
+            <overrideObjectTreeBackgroundColor>false</overrideObjectTreeBackgroundColor>
+            <overrideStatusBarBackgroundColor>false</overrideStatusBarBackgroundColor>
+            <overrideToolbarBackgroundColor>false</overrideToolbarBackgroundColor>
+            <statusBarBackgroundColorRgbValue>0</statusBarBackgroundColorRgbValue>
+            <toolbarBackgroundColorRgbValue>0</toolbarBackgroundColorRgbValue>
+        </colorProperties>
+        <connectAtStartup>false</connectAtStartup>
+        <connectionProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasConnectionProperties">
+            <enableConnectionKeepAlive>false</enableConnectionKeepAlive>
+            <keepAliveSleepTimeSeconds>120</keepAliveSleepTimeSeconds>
+            <keepAliveSqlStatement/>
+        </connectionProperties>
+        <driverIdentifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>23056d25:15adc1369d2:-7f3a</string>
+        </driverIdentifier>
+        <driverProperties Class="net.sourceforge.squirrel_sql.fw.sql.SQLDriverPropertyCollection">
+            <driverProperties Indexed="true"/>
+        </driverProperties>
+        <identifier Class="net.sourceforge.squirrel_sql.fw.id.UidIdentifier">
+            <string>-7bcdb4b7:15adc15c5a9:-7f7a</string>
+        </identifier>
+        <name>olhoNeles</name>
+        <password/>
+        <schemaProperties Class="net.sourceforge.squirrel_sql.client.gui.db.SQLAliasSchemaProperties">
+            <cacheSchemaIndependentMetaData>false</cacheSchemaIndependentMetaData>
+            <globalState>0</globalState>
+            <schemaDetails Indexed="true"/>
+        </schemaProperties>
+        <url>jdbc:sqlite:/home/josiel/devel/repo/olhoneles/olhoneles/db.sqlite3</url>
+        <useDriverProperties>false</useDriverProperties>
+        <userName/>
+    </Bean>
+</Beans>
+
+
+===================================================
+Connection - General
+===================================================
+transIsolation: 8
+readonly: false
+
+
+===================================================
+Metadata
+===================================================
+"getUserName","null"
+"supportsCatalogsInTableDefinitions","false"
+"supportsSchemasInTableDefinitions","false"
+"getDriverName","SQLiteJDBC"
+"getCatalogSeparator","."
+"storesMixedCaseIdentifiers","true"
+"storesUpperCaseIdentifiers","false"
+"getDatabaseProductName","SQLite"
+"getDriverVersion","native"
+"getDatabaseProductVersion","3.16.1"
+"getDatabaseMajorVersion","3"
+"getIdentifierQuoteString"," "
+"supportsSchemasInDataManipulation","false"
+"supportsStoredProcedures","false"
+"supportsSavepoints","true"
+"getCatalogTerm","catalog"
+"getSchemaTerm","schema"
+"getProcedureTerm","not_implemented"
+"supportsCatalogsInDataManipulation","false"
+"supportsCatalogsInProcedureCalls","false"
+"supportsMultipleResultSets","false"
+"getJDBCMajorVersion","2"
+"getJDBCMinorVersion","1"
+"nullsAreSortedHigh","true"
+"allProceduresAreCallable","false"
+"allTablesAreSelectable","true"
+"nullsAreSortedLow","false"
+"nullsAreSortedAtStart","true"
+"nullsAreSortedAtEnd","false"
+"getDriverMajorVersion","1"
+"getDriverMinorVersion","1"
+"usesLocalFiles","true"
+"usesLocalFilePerTable","false"
+"supportsMixedCaseIdentifiers","true"
+"storesLowerCaseIdentifiers","false"
+"supportsMixedCaseQuotedIdentifiers","false"
+"storesUpperCaseQuotedIdentifiers","false"
+"storesLowerCaseQuotedIdentifiers","false"
+"storesMixedCaseQuotedIdentifiers","false"
+"getSearchStringEscape","null"
+"getExtraNameCharacters",""
+"supportsAlterTableWithAddColumn","false"
+"supportsAlterTableWithDropColumn","false"
+"supportsColumnAliasing","true"
+"nullPlusNonNullIsNull","true"
+"supportsConvert","false"
+"supportsTableCorrelationNames","false"
+"supportsDifferentTableCorrelationNames","false"
+"supportsExpressionsInOrderBy","true"
+"supportsOrderByUnrelated","false"
+"supportsGroupBy","true"
+"supportsGroupByUnrelated","false"
+"supportsGroupByBeyondSelect","false"
+"supportsLikeEscapeClause","false"
+"supportsMultipleTransactions","true"
+"supportsNonNullableColumns","true"
+"supportsMinimumSQLGrammar","true"
+"supportsCoreSQLGrammar","true"
+"supportsExtendedSQLGrammar","false"
+"supportsANSI92EntryLevelSQL","false"
+"supportsANSI92IntermediateSQL","false"
+"supportsANSI92FullSQL","false"
+"supportsIntegrityEnhancementFacility","false"
+"supportsOuterJoins","true"
+"supportsFullOuterJoins","false"
+"supportsLimitedOuterJoins","true"
+"isCatalogAtStart","true"
+"supportsSchemasInProcedureCalls","false"
+"supportsSchemasInIndexDefinitions","false"
+"supportsSchemasInPrivilegeDefinitions","false"
+"supportsCatalogsInIndexDefinitions","false"
+"supportsCatalogsInPrivilegeDefinitions","false"
+"supportsUnion","true"
+"supportsPositionedDelete","false"
+"supportsPositionedUpdate","false"
+"supportsSelectForUpdate","false"
+"supportsSubqueriesInComparisons","false"
+"supportsSubqueriesInExists","true"
+"supportsSubqueriesInIns","true"
+"supportsSubqueriesInQuantifieds","false"
+"supportsCorrelatedSubqueries","false"
+"supportsUnionAll","true"
+"supportsOpenCursorsAcrossCommit","false"
+"supportsOpenCursorsAcrossRollback","false"
+"supportsOpenStatementsAcrossCommit","false"
+"supportsOpenStatementsAcrossRollback","false"
+"getMaxBinaryLiteralLength","0"
+"getMaxCharLiteralLength","0"
+"getMaxColumnNameLength","0"
+"getMaxColumnsInGroupBy","0"
+"getMaxColumnsInIndex","0"
+"getMaxColumnsInOrderBy","0"
+"getMaxColumnsInSelect","0"
+"getMaxColumnsInTable","0"
+"getMaxConnections","0"
+"getMaxCursorNameLength","0"
+"getMaxIndexLength","0"
+"getMaxSchemaNameLength","0"
+"getMaxProcedureNameLength","0"
+"getMaxCatalogNameLength","0"
+"getMaxRowSize","0"
+"doesMaxRowSizeIncludeBlobs","false"
+"getMaxStatementLength","0"
+"getMaxStatements","0"
+"getMaxTableNameLength","0"
+"getMaxTablesInSelect","0"
+"getMaxUserNameLength","0"
+"getDefaultTransactionIsolation","TRANSACTION_SERIALIZABLE"
+"supportsTransactions","true"
+"supportsDataDefinitionAndDataManipulationTransactions","true"
+"supportsDataManipulationTransactionsOnly","false"
+"dataDefinitionCausesTransactionCommit","false"
+"dataDefinitionIgnoredInTransactions","false"
+"supportsBatchUpdates","true"
+"supportsNamedParameters","true"
+"supportsMultipleOpenResults","false"
+"supportsGetGeneratedKeys","true"
+"getDatabaseMinorVersion","0"
+"getSQLStateType","2"
+"locatorsUpdateCopy","false"
+"supportsStatementPooling","false"
+"getResultSetHoldability","2"
+"getRowIdLifetime","null"
+"supportsStoredFunctionsUsingCallSyntax","false"
+"autoCommitFailureClosesAllResultSets","false"
+"getClientInfoProperties","null"
+"generatedKeyAlwaysReturned","false"
+"getMaxLogicalLobSize","0"
+"supportsRefCursors","false"
+"getURL","jdbc:sqlite:/home/josiel/devel/repo/olhoneles/olhoneles/db.sqlite3"
+"isReadOnly","false"
+
+
+===================================================
+Catalogs
+===================================================
+
+
+===================================================
+Schemas
+===================================================
+
+
+===================================================
+Data Types
+===================================================
+"BLOB","2004 [BLOB]","0","null","null","null","true","true","supports all WHERE","false","false","false","null","0","0","null","null","10"
+"INTEGER","4 [INTEGER]","0","null","null","null","true","true","supports all WHERE","false","false","false","null","0","0","null","null","10"
+"NULL","0 [NULL]","0","null","null","null","true","true","supports all WHERE","false","false","false","null","0","0","null","null","10"
+"REAL","7 [REAL]","0","null","null","null","true","true","supports all WHERE","false","false","false","null","0","0","null","null","10"
+"TEXT","12 [VARCHAR]","0","null","null","null","true","true","supports all WHERE","false","false","false","null","0","0","null","null","10"
+
+
+===================================================
+Table Types
+===================================================
+"TABLE"
+"VIEW"
