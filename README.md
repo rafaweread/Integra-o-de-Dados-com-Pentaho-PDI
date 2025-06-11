@@ -19,7 +19,7 @@ ETL é um processo fundamental em Business Intelligence e engenharia de dados. E
 
 A imagem abaixo ilustra de forma simplificada este fluxo:
 
-![Ilustração do processo ETL](https://i.imgur.com/g23S01J.png)
+![Ilustração do processo ETL](https://imgur.com/a/HLKf7uF)
 *Fonte: Diagrama genérico do processo ETL.*
 
 ---
@@ -31,7 +31,7 @@ Ele armazena dados históricos e atuais de forma consolidada, provenientes de di
 
 A arquitetura típica de um Data Warehouse é demonstrada abaixo:
 
-![Arquitetura de um Data Warehouse](https://i.imgur.com/yMid3vJ.png)
+![Arquitetura de um Data Warehouse](https://imgur.com/TFfSwXR)
 *Fonte: Diagrama genérico da arquitetura de um Data Warehouse.*
 
 ---
